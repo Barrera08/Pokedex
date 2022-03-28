@@ -1,0 +1,60 @@
+/*Se supone es un pokedek touch*/
+form {
+    width: 200px;
+    margin: 20px auto;
+}
+input {
+    width: 100%;
+    padding: 10px;
+}
+.poke-card {
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    max-width: 300px;
+    border-radius: 4px;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #000;
+    border: 1px solid black;
+}
+.poke-card::before {
+    content: '';
+    background: radial-gradient(RED 80%, transparent 10%);
+    background-size: 3px 3px;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: -2;
+}
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+}
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dashed black;
+    font-weight: bold;
+}
+.poke-img {
+    width: 180px;
+    border-radius: 50%;
+    top: 50px;
+}
